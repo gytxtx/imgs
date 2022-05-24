@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="renderer" content="webkit">
+
+<meta id="color_chrome" name="theme-color" content="#2196F3">
+<meta id="color_safari" name="apple-mobile-web-app-status-bar-style" content="#2196F3">
+<link rel="stylesheet" type="text/css" href="css/mdui.min.css">
+<link rel="stylesheet" type="text/css" href="css/materiality.min.css">
+<link rel="stylesheet" type="text/css" href="css/highlight.min.css">
+<script type="text/javascript" src="js/mdui.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.min.js" defer=""></script>
+<script type="text/javascript" src="js/highlight.min.js" defer=""></script>
+<script type="text/javascript" src="js/materiality.min.js" defer=""></script>
+<script type="text/javascript" src="js/darkmode.min.js" defer=""></script>
+<link rel="Shortcut Icon" href="./img/logo.png">
+<link rel="Bootmark" href="./logo.png">
+<meta name="description" content="KFACBT">
+<meta name="keywords" content="KFACBT,网站,KFACBT的网站">
+<meta name="generator" content="Typecho 1.1/17.10.30">
+<meta name="template" content="materiality-typecho-theme">
+<!-- <link rel="alternate" type="application/rss+xml" title="EAimTY 的博客 » RSS 2.0" href="https://www.eaimty.com/feed/"> -->
+<!-- <link rel="alternate" type="application/rdf+xml" title="EAimTY 的博客 » RSS 1.0" href="https://www.eaimty.com/feed/rss/"> -->
+<!-- <link rel="alternate" type="application/atom+xml" title="EAimTY 的博客 » ATOM 1.0" href="https://www.eaimty.com/feed/atom/"> -->
+<title>KFACBT的网站</title>
+</head>
+<body class="mdui-drawer-body-left  mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink">
+<header class="mdui-appbar mdui-appbar-fixed">
+<div class="mdui-toolbar mdui-color-theme">
+<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#drawer', swipe: true}"><i class="mdui-icon materiality-icons"></i></span>
+<a href="https://gytxtx.github.io/HomePage" class="mdui-typo-headline">KFACBT的网站</a>
+<div class="mdui-toolbar-spacer"></div>
+<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" id="dark_toggle_btn" mdui-tooltip="{content: '切换为暗色模式'}" onclick="toggle()"><i class="mdui-icon materiality-icons" id="dark_toggle_icon"></i></span>
+<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: '菜单'}" mdui-menu="{target: '#menu'}"><i class="mdui-icon materiality-icons"></i></span>
+<ul class="mdui-menu" id="menu">
+<li class="mdui-menu-item">
+<a href="https://www.bilibili.com/" class="mdui-ripple footer-menu-item">哔哩哔哩</a>
+</li>
+<li class="mdui-menu-item">
+<a href="https://www.github.com/" class="mdui-ripple footer-menu-item">GitHub</a>
+</li>
+</ul>
+</div>
+</header>
+<div class="mdui-drawer" id="drawer">
+<div class="billboard">
+<div class="logo mdui-m-y-2 mdui-m-l-2" style="background:url(./img/logo.png);background-size:contain"></div>
+<div class="description mdui-m-x-2 mdui-text-color-white-text mdui-valign">KFACBT</div>
+</div>
+<div class="mdui-list" mdui-collapse="{accordion: true}">
+<form class="mdui-p-t-0 mdui-m-x-2 mdui-textfield mdui-textfield-floating-label" method="post">
+<label for="search" class="mdui-textfield-label">搜索</label>
+<input id="search" class="mdui-textfield-input" type="text" autocomplete="new-password" name="s">
+</form>
+<div class="mdui-divider"></div>
+<a href="https://gytxtx.github.io/HomePage" class="mdui-list-item mdui-ripple" id="home-url">
+<i class="mdui-list-item-icon mdui-icon materiality-icons"></i>
+<div class="mdui-list-item-content mdui-m-r-4">首页</div>
+</a>
+<a href="https://gytxtx.github.io/Blog" class="mdui-list-item mdui-ripple">
+<i class="mdui-list-item-icon mdui-icon materiality-icons"></i>
+<div class="mdui-list-item-content mdui-m-r-4">博客</div>
+</a>
+<a href="https://gytxtx.github.io/imgs" class="mdui-list-item mdui-ripple">
+<i class="mdui-list-item-icon mdui-icon materiality-icons"></i>
+<div class="mdui-list-item-content mdui-m-r-4">图片</div>
+</a>
+<a href="https://gytxtx.github.io/About" class="mdui-list-item mdui-ripple">
+<i class="mdui-list-item-icon mdui-icon materiality-icons"></i>
+<div class="mdui-list-item-content mdui-m-r-4">关于</div>
+</a>
+<a href="https://www.eaimty.com/theme.html" class="mdui-list-item mdui-ripple">
+<i class="mdui-list-item-icon mdui-icon materiality-icons"></i>
+<div class="mdui-list-item-content mdui-m-r-4">网站使用的主题</div>
+</a>
+<div class="mdui-divider"></div>
+<div class="mdui-collapse-item">
+<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+<i class="mdui-list-item-icon mdui-icon materiality-icons"></i>
+<div class="mdui-list-item-content">留言榜</div>
+<i class="mdui-collapse-item-arrow mdui-icon materiality-icons"></i>
+</div>
+<div class="mdui-collapse-item-body mdui-list">
+<a href="https://gytxtx.github.io/MiFanDian" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '发表于：米饭店成员列表'}">Y雅米M：哈姆，哈姆</a>
+<a href="https://gytxtx.github.io/MiFanDian" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '发表于：米饭店成员列表'}">鸭鸭：不要停下来啊~</a>
+<a href="https://gytxtx.github.io/MiFanDian" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '发表于：米饭店成员列表'}">白菜啃小猪：我是白菜啃小猪，感谢你的关注~（这个人其实很沙雕）</a>
+<a href="https://gytxtx.github.io/MiFanDian" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '发表于：米饭店成员列表'}">beluga：阿巴巴巴巴巴巴巴</a>
+<a href="https://gytxtx.github.io/MiFanDian" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '发表于：米饭店成员列表'}">KFACBT：哒哒哒嘀哒哒</a>
+<a href="https://gytxtx.github.io/MiFanDian" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '发表于：米饭店成员列表'}">神楽乃：大家好我是神楽乃，整个米饭店你最值得信赖的人！马上给雅米打3280的话会获得好运哦</a>
+<a href="https://gytxtx.github.io/MiFanDian" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '发表于：米饭店成员列表'}">Frira：E5‌85‌B3 E6‌B3‌A8 40 E5‌AD‌99 E7‌AC‌91 E5‌B7‌9D 32 35 38 E8‌B0‌A2 E8‌B0‌A2 E5‌96‌B5</a>
+<a href="https://gytxtx.github.io/MiFanDian" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '发表于：米饭店成员列表'}">朵拉：你能看到这条留言吗？在哪里？</a>
+<a href="https://gytxtx.github.io/MiFanDian" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '发表于：米饭店成员列表'}">猴子: 我没看见它啊</a>
+</div>
+</div>
+<div class="mdui-collapse-item">
+<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+<i class="mdui-list-item-icon mdui-icon materiality-icons"></i>
+<div class="mdui-list-item-content">文章列表</div>
+<i class="mdui-collapse-item-arrow mdui-icon materiality-icons"></i>
+</div>
+<div class="mdui-collapse-item-body mdui-list">
+<a href="https://www.eaimty.com/2022/05/" class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '1篇文章'}">May 2022</a>
+
+</div>
+</div>
+<div class="mdui-collapse-item">
+<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+<i class="mdui-list-item-icon mdui-icon materiality-icons"></i>
+<div class="mdui-list-item-content">友情链接</div>
+<i class="mdui-collapse-item-arrow mdui-icon materiality-icons"></i>
+</div>
+<div class="mdui-collapse-item-body mdui-list">
+<a class="mdui-list-item mdui-ripple" target="_blank" rel="external friend noopener" href="https://kfacbt.rth.app/" mdui-tooltip="{content: 'KFA的另一个网站'}">小网站</a>
+<a class="mdui-list-item mdui-ripple" target="_blank" rel="external friend noopener" href="https://space.bilibili.com/284572130/" mdui-tooltip="{content: '感谢关注 评论私信尽量都点赞回复 楼中楼不一定看到 爱搞烂活且只会搞烂活 更新以及直播时间随缘 暂不接商务合作 需加好友或一起玩游戏私信即可'}">Y雅米M</a>
+<a class="mdui-list-item mdui-ripple" target="_blank" rel="external friend noopener" href="https://space.bilibili.com/522535396/" mdui-tooltip="{content: '喜欢玩游戏，喜欢搞笑(鬼畜)，沉迷学习(屁话)'}">白菜啃小猪</a>
+<a class="mdui-list-item mdui-ripple" target="_blank" rel="external friend noopener" href="https://space.bilibili.com/401371781/" mdui-tooltip="{content: '你看我？ 那我也要看你！'}">鸭鸭柠檬精</a>
+<a class="mdui-list-item mdui-ripple" target="_blank" rel="external friend noopener" href="https://space.bilibili.com/472211896/" mdui-tooltip="{content: '沙雕up主 如果需要可以找我配音～ 杂七杂八区up主，时不时整个活'}">废柴小亚</a>
+<a class="mdui-list-item mdui-ripple" target="_blank" rel="external friend noopener" href="https://space.bilibili.com/401913755/" mdui-tooltip="{content: '“米饭店舰长头头”'}">神楽乃</a>
+</div>
+</div>
+</div>
+</div>
+<div class="page-content">
+<div class="translate-box"></div>
+<div class="mdui-container" id="main">
+<div class="anchor" id="top"></div>
+<div class="mdui-card mdui-hoverable mdui-m-y-3">
+<div class="mdui-card-primary">
+<div class="mdui-card-primary-title"><a class="mdui-text-color-theme-accent" href="https://www.eaimty.com/2022/05/tolerating-slowdowns-in-replicated-state-machines-using-copilots.html">DELTARUNE 图片合集ヾ(≧▽≦*)o</a></div>
+<div class="mdui-card-primary-subtitle mdui-text-color-theme-text">
+May 07, 2022 </div>
+</div>
+<div class="mdui-card-content mdui-typo"><p> 超链接：<a href="https://www.bilibili.com/read/readlist/rl524619">deltarune推特搬运图集</a></div>
+<div class="mdui-card-actions">
+<!-- <a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://www.eaimty.com/2022/05/tolerating-slowdowns-in-replicated-state-machines-using-copilots.html">继续阅读</a> -->
+</div>
+</div>
+<!-- 结束 -->
+<div class="mdui-m-y-3 page-nav">
+<div class="mdui-btn-group"><a href="https://www.eaimty.com/page/1/" class="mdui-btn-active mdui-btn mdui-ripple mdui-text-color-theme-accent">1</a><a href="https://www.eaimty.com/page/2/" class="mdui-btn mdui-ripple mdui-text-color-theme-accent">2</a><a href="https://www.eaimty.com/page/3/" class="mdui-btn mdui-ripple mdui-text-color-theme-accent">3</a><span class="mdui-btn mdui-ripple mdui-text-color-theme-accent" mdui-tooltip="{content: '共有 114514 篇文章'}">...</span><a href="https://www.eaimty.com/page/11/" class="mdui-btn mdui-ripple mdui-text-color-theme-accent">11</a><a href="https://www.eaimty.com/page/2/" class="mdui-icon materiality-icons mdui-btn mdui-ripple mdui-text-color-theme-accent"></a></div></div>
+</div>
+<footer>
+<div class="footer-icons mdui-col-xs-3 mdui-valign">
+<div class="mdui-center">
+<a href="mailto:gytxtx@163.com" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content: '邮箱'}" target="_blank"><i class="mdui-icon materiality-icons"></i></a>
+<a href="https://github.com/gytxtx" class="mdui-btn mdui-btn-icon mdui-ripple" rel="external noopener" mdui-tooltip="{content: 'GitHub'}" target="_blank"><i class="mdui-icon materiality-icons"></i></a>
+<a href="https://twitter.com/KFACBT" class="mdui-btn mdui-btn-icon mdui-ripple" rel="external noopener" mdui-tooltip="{content: 'Twitter'}" target="_blank"><i class="mdui-icon materiality-icons"></i></a>
+</div>
+</div>
+<div class="footer-copyright mdui-col-xs-6 mdui-valign">
+<div class="mdui-center">Copyright © 114514 <a href="https://space.bilibili.com/">KFACBT的B站主页</a></div>
+</div>
+<div class="footer-credit mdui-col-xs-3 mdui-valign">
+<div class="mdui-center">
+<div>Powered by <a href="http://typecho.org/" rel="external noopener" target="_blank">Typecho</a></div>
+<div>and Theme <a href="https://www.eaimty.com/theme.html" rel="external noopener" target="_blank">materiality</a></div>
+<div><a href="https://www.bilibili.com/video/BV1GJ411x7h7" rel="external noopener" target="_blank">DELTARUNE 第三章测试版下载</a></div>
+</div>
+</div>
+</footer>
+</div>
+<a class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" id="scrolltop" href="#top"><i class="mdui-icon materiality-icons"></i></a>
+
+
+</body></html>
